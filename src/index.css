@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+@import "tailwindcss";
+
+body, .custom-font {
+  font-family: 'Intel One Mono', monospace;
+}
+
+
+@layer utilities {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-in-out forwards;
+  }
+}
