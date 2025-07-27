@@ -16,6 +16,7 @@ import {
 
 import { RiTelegram2Fill } from 'react-icons/ri'
 import { TiLocationArrow } from 'react-icons/ti'
+import Footer from '../Common/Footer'
 
 export default function HomePage() {
 
@@ -400,8 +401,7 @@ export default function HomePage() {
 
 
 
-
-
+<Footer/>
     </>
   )
 }
