@@ -149,7 +149,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="bg-white" id='service'>
+      <div className="bg-white p-5" id='service'>
         <h1 className='bg-gray-200 text-center text-2xl w-1/2 md:w-1/9 sm:w-1/2 text-black rounded-md mt-10 mb-10 py-1 mx-auto'>Our Services</h1>
         <div className="text-center mx-auto">
           <h1 className='text-2xl sm:text-4xl mt-2'>Complete mobile & Financial Solutions</h1>
