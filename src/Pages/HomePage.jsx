@@ -18,6 +18,26 @@ import { RiTelegram2Fill } from 'react-icons/ri'
 import { TiLocationArrow } from 'react-icons/ti'
 
 export default function HomePage() {
+
+  const GetDirection = () => {
+    window.open(
+      "https://maps.app.goo.gl/1xkBad8qpU1EuPpk7",
+      "_blank"
+    );
+  }
+
+
+  const ContactOnWhatsApp = () => {
+    window.open(
+      "https://wa.me/6352244221?text=Welcome%20to%20PatilMobile%21%20What%20kind%20of%20service%20are%20you%20looking%20for%3F%20Feel%20free%20to%20message%20us%20anytime.%20Thank%20you%20so%20much%20for%20choosing%20PatilMobile%21",
+      "_blank"
+    );
+  };
+
+
+
+
+
   return (
     <>
       <NavBar />
@@ -67,40 +87,40 @@ export default function HomePage() {
             </div>
           </div>
 
-         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-4 py-8 max-w-screen-xl mx-auto">
-  {/* Column 1 */}
-  <div className="flex flex-col gap-4">
-    <img
-      src={MobileScreen}
-      alt="Mobile Screen"
-      className="w-full object-cover rounded-xl max-w-full"
-    />
-    <img
-      src={Laptop}
-      alt="Laptop"
-      className="w-full object-cover rounded-xl max-w-full"
-    />
-  </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-4 py-8 max-w-screen-xl mx-auto">
+            {/* Column 1 */}
+            <div className="flex flex-col gap-4">
+              <img
+                src={MobileScreen}
+                alt="Mobile Screen"
+                className="w-full object-cover rounded-xl max-w-full"
+              />
+              <img
+                src={Laptop}
+                alt="Laptop"
+                className="w-full object-cover rounded-xl max-w-full"
+              />
+            </div>
 
-  {/* Column 2 */}
-  <div className="flex flex-col gap-4">
-    <img
-      src={MobileRepair}
-      alt="Mobile Repair"
-      className="w-full object-cover rounded-xl max-w-full"
-    />
-    <img
-      src={MobileinTable}
-      alt="Mobile in Table"
-      className="w-full object-cover rounded-xl max-w-full"
-    />
-    <img
-      src={Repairing}
-      alt="Repairing"
-      className="w-full object-cover rounded-xl max-w-full"
-    />
-  </div>
-</div>
+            {/* Column 2 */}
+            <div className="flex flex-col gap-4">
+              <img
+                src={MobileRepair}
+                alt="Mobile Repair"
+                className="w-full object-cover rounded-xl max-w-full"
+              />
+              <img
+                src={MobileinTable}
+                alt="Mobile in Table"
+                className="w-full object-cover rounded-xl max-w-full"
+              />
+              <img
+                src={Repairing}
+                alt="Repairing"
+                className="w-full object-cover rounded-xl max-w-full"
+              />
+            </div>
+          </div>
 
         </div>
 
@@ -315,29 +335,29 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:w-1/3">
             <div className="border shadow-lg shadow-gray-800 rounded-xl flex   flex-col items-center text-center py-10">
               <img src={Phone} className="w-16" alt="Phone" />
-              <h1 className="mt-2 text-2xl text-black">Call Us</h1>
-              <p className="text-[14px]">+91 99887-76655</p>
-              <p className="text-[14px]">+91 99887-76655</p>
+              <h1 className="mt-5 text-2xl text-black">Call Us</h1>
+              <h2 className="text-[18px] mt-5">+91 99887-76655</h2>
+              <h2 className="text-[18px]">+91 99887-76655</h2>
             </div>
             <div className="border shadow-lg shadow-gray-800 rounded-xl flex  flex-col items-center text-center p-10">
               <img src={Map} className="w-16" alt="Map" />
-              <h1 className="mt-2 text-2xl text-black">Visit Us</h1>
-              <p className="text-[14px]">Kim Main Road 394110</p>
+              <h1 className="mt-6 text-2xl text-black">Visit Us</h1>
+              <p className="text-[18px] mt-8 ">Main Road Near HP gas opp RK park kim surat gujarat 394110</p>
             </div>
             <div className="border shadow-lg shadow-gray-800 rounded-xl flex  flex-col items-center text-center p-10">
               <img src={Working} className="w-16" alt="Working Hours" />
-              <h1 className="mt-2">Monday - Saturday</h1>
+              <h1 className="mt-5">Monday - Saturday</h1>
               <h1>9:00AM to 9:00PM</h1>
             </div>
             <div className="border shadow-lg shadow-gray-800 rounded-xl flex  flex-col items-center text-center p-10">
               <img src={Email} className="w-16" alt="Email" />
               <h1 className="text-2xl text-black mt-2">Email Us</h1>
-              <p className="break-words text-[16px]">Patilmobile@gmail.com</p>
+              <p className="break-words text-[16px]"> <a href="mailto:patilrahula@gmail.com"> Patilmobile@gmail.com  </a></p>
             </div>
           </div>
 
           {/* Right: Map + Buttons */}
-          <div className="border-2 bg-gray-100 rounded-lg md:w-2/3 p-4">
+          <div className="border-2 bg-gray-100 shadow-2xl rounded-lg md:w-2/3 p-4">
             <div className="w-full h-72 sm:h-96 rounded-lg overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d780.9224918625774!2d72.92470524722317!3d21.40114986886185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be03910dc14f8db%3A0x6afb516f5c4897b9!2sKim%2C%20station%20road%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1753597974128!5m2!1sen!2sin"
@@ -346,7 +366,7 @@ export default function HomePage() {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-lg"
+                className="rounded-lg "
                 title="PatilMobile Location"
               ></iframe>
             </div>
@@ -359,11 +379,11 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-5 mt-4 px-4">
               <div className="bg-black text-white gap-2 rounded px-4 py-2 text-xl flex items-center justify-center cursor-pointer">
                 <TiLocationArrow size={28} />
-                <button>Get Direction</button>
+                <button className='cursor-pointer' onClick={GetDirection}>Get Direction</button>
               </div>
               <div className="bg-gray-300 rounded px-4 py-2 text-xl gap-2 flex items-center justify-center cursor-pointer">
                 <RiTelegram2Fill size={24} />
-                <button>Whatsapp</button>
+                <button onClick={ContactOnWhatsApp}>Whatsapp</button>
               </div>
             </div>
           </div>
