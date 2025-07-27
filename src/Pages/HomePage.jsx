@@ -301,7 +301,7 @@ export default function HomePage() {
 
 
       <div className="" id="contact">
-        <h1 className="bg-gray-200 text-center text-xl w-1/5 sm:w-1/2 md:w-1/4 lg:w-1/9 text-black rounded-md mt-15 z-44 mb-5 py-1 mx-auto">
+        <h1 className="bg-gray-200 text-center text-xl w-1/2 sm:w-1/2 md:w-1/4 lg:w-1/9 text-black rounded-md mt-15 z-44 mb-5 py-1 mx-auto">
           Contact Us
         </h1>
         <div className="text-center px-4">
@@ -369,11 +369,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-
-
-
-
-
 
 
 
